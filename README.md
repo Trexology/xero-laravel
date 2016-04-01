@@ -16,7 +16,7 @@ The Xero Service Provider can be installed via [Composer](http://getcomposer.org
 ```json
 {
     "require": {
-        "Softlabs/xero-laravel": "3.*"
+        "trexology/xero-laravel": "^3.0",
     },
 }
 ```
@@ -27,7 +27,7 @@ Also you need to add the repository to composer.json:
 "repositories": [
     {
         "type": "vcs",
-        "url": "https://github.com/Softlabs/xero-laravel"
+        "url": "https://github.com/Trexology/xero-laravel"
     }
 ]
 ```
