@@ -82,7 +82,7 @@ class PHPXero {
 
 	public function __call($name, $arguments) {
 		$name = strtolower($name);
-		$valid_methods = array('accounts','contacts','creditnotes','currencies','invoices','organisation','payments','taxrates','trackingcategories','items','banktransactions','brandingthemes','receipts','expenseclaims');
+		$valid_methods = array('accounts','contacts','creditnotes','currencies','invoices','organisation','payments','taxrates','trackingcategories','items','banktransactions','brandingthemes','receipts','expenseclaims','manualjournals');
 		$valid_post_methods = array('banktransactions','contacts','creditnotes','expenseclaims','invoices','items','manualjournals','receipts');
 		$valid_put_methods = array('payments');
 		$valid_get_methods = array('accounts','banktransactions','brandingthemes','contacts','creditnotes','currencies','employees','expenseclaims','invoices','items','journals','manualjournals','organisation','payments','receipts','taxrates','trackingcategories','users');
@@ -206,7 +206,7 @@ class PHPXero {
 				$post_body = ArrayToXML::toXML( $arguments[0], $rootNodeName = $method );
 			}
 			$post_body = trim(substr($post_body, (stripos($post_body, ">")+1) ));
-			
+
 			if ( in_array( $name, $valid_post_methods ) ) {
 				$xero_url = self::ENDPOINT . $method;
 				$req  = OAuthRequest::from_consumer_and_token( $this->consumer, $this->token, 'POST',$xero_url, array('xml'=>$post_body) );
