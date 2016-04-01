@@ -11,7 +11,7 @@ We will review this after Laravel 5 has been released and likely leave this acti
 
 ## Installation
 
-The Xero Service Provider can be installed via [Composer](http://getcomposer.org) by requiring the `Softlabs/xero-laravel` package in your project's `composer.json`.
+The Xero Service Provider can be installed via [Composer](http://getcomposer.org) by requiring the `Trexology/xero-laravel` package in your project's `composer.json`.
 
 ```json
 {
@@ -19,17 +19,6 @@ The Xero Service Provider can be installed via [Composer](http://getcomposer.org
         "trexology/xero-laravel": "^3.0",
     },
 }
-```
-
-Also you need to add the repository to composer.json:
-
-```json
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/Trexology/xero-laravel"
-    }
-]
 ```
 
 ## Usage
@@ -55,7 +44,7 @@ Find the `providers` key in `config/app.php` and register the Xero Service Provi
 ```php
     'providers' => [
         // ...
-        'Softlabs\XeroLaravel\XeroLaravelServiceProvider',
+        'Trexology\XeroLaravel\XeroLaravelServiceProvider',
     ]
 ```
 
@@ -64,7 +53,7 @@ Find the `aliases` key in `config/app.php` and add in our `Xero` alias.
 ```php
     'aliases' => [
         // ...
-        'XeroLaravel'     => 'Softlabs\XeroLaravel\Facades\XeroLaravel',
+        'XeroLaravel'     => 'Trexology\XeroLaravel\Facades\XeroLaravel',
     ]
 ```
 

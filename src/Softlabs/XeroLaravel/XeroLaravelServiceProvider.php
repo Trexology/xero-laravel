@@ -1,8 +1,8 @@
-<?php namespace Softlabs\XeroLaravel;
+<?php namespace Trexology\XeroLaravel;
 
 use Illuminate\Support\ClassLoader;
 use Illuminate\Support\ServiceProvider;
-use Softlabs\XeroLaravel\PHPXero\PHPXero;
+use Trexology\XeroLaravel\PHPXero\PHPXero;
 
 class XeroLaravelServiceProvider extends ServiceProvider {
 

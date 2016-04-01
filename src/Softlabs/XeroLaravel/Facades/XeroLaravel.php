@@ -1,4 +1,4 @@
-<?php namespace Softlabs\XeroLaravel\Facades;
+<?php namespace Trexology\XeroLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
