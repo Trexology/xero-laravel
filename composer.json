@@ -15,7 +15,7 @@
     },
     "autoload": {
       "psr-0": {
-        "trexology\\XeroLaravel": "src/"
+        "Trexology\\XeroLaravel": "src/"
       }
     }
 }
