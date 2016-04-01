@@ -1,12 +1,12 @@
 {
-    "name": "Softlabs/xero-laravel",
-    "description": "Xero Service Provider for Laravel 4",
-    "keywords": ["laravel","laravel 4","xero"],
+    "name": "trexology/xero-laravel",
+    "description": "Xero Service Provider for Laravel 4/5",
+    "keywords": ["laravel","laravel 4","xero","laravel 5"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Paul Johnston",
-            "email": "paul@softlabs.co.uk"
+            "name": "Trex Lim",
+            "email": "trexlim@gmail.com"
         }
     ],
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
       "psr-0": {
-        "Softlabs\\XeroLaravel": "src/"
+        "trexology\\XeroLaravel": "src/"
       }
     }
 }
